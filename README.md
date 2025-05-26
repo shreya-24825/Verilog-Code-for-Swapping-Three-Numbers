@@ -29,7 +29,7 @@ Save and Document Results:
 Capture the waveform output and include the results in your report for verification.
 
 Verilog Code:
-
+```
 // swap_three_numbers.v
 module swap_three_numbers (
     input wire [7:0] a_in,
@@ -45,7 +45,7 @@ module swap_three_numbers (
         c_out = a_in; // Swap: c = a
     end
 endmodule
-
+```
 Output:
 ![Screenshot 2025-04-19 135208](https://github.com/user-attachments/assets/0317c9ff-e284-4d60-a1ab-f7f1b5d65b7b)
 
@@ -55,7 +55,7 @@ Testbench for Swapping Three Numbers:
 
 // swap_three_numbers_tb.v
 `timescale 1ns / 1ps
-
+```
 module swap_three_numbers_tb;
 
     // Inputs
@@ -97,6 +97,7 @@ module swap_three_numbers_tb;
         #10 $stop;
     end
 endmodule
+```
 
-Conclusion
+Conclusion:
 In this experiment, a Verilog HDL code for swapping three numbers was designed and successfully simulated. The testbench verified the swapping operation, showing that the values of three input numbers (a, b, and c) were swapped correctly without the use of temporary variables. This experiment demonstrated the effectiveness of Verilog in implementing logical operations and control mechanisms such as swapping values. The simulation results confirm the correct functionality of the design.
